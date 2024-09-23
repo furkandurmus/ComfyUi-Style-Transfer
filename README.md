@@ -15,29 +15,35 @@ This repository contains an implementation of an advanced image style transfer t
 
 ## Prerequisites
 
+- Linux system 
 - Python 3.10+
 - CUDA-compatible GPU (for optimal performance)
-- ComfyUI (latest version)
 
 ## Installation
 
 1. Clone this repository:
    ```
    git clone https://github.com/furkandurmus/ComfyUi-Style-Transfer.git
-   cd comfyui
    ```
-
+2 Clone custom node repositories to enhance usability of Comfy:
+   ```
+   cd ComfyUi-Style-Transfer/custom_nodes
+   git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+   git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
+   git clone https://github.com/Fannovel16/comfyui_controlnet_aux.git
+   ```
 2. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```
 
 3. Download the required models:
-   - Juggernaut XL
-   - Diffusers XL Depth
-   (Provide links or instructions for downloading these models)
+   - [Juggernaut XL](https://civitai.com/models/133005/juggernaut-xl) and put into /models/checkpoints
+   - [diffusers_xl_depth_full.safetensors](https://comfyui-wiki.com/resource/controlnet-models/controlnet-sdxl) and put into /models/controlnet
+   - [clip vision](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K) and put into /models/clip_vision
+   - [ipadapter](https://huggingface.co/h94/IP-Adapter/blob/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors) and put into /models/ipadapter (create if not exists)
+   - [vae](https://huggingface.co/hskWih/tmp_model/blob/2709fed9dcafe28f48d2cf798802206204f66889/tmpvae_XL/xlVAEC_f1.safetensors) and put into /models/vae
 
-4. Place the downloaded models in the appropriate ComfyUI directories.
 
 ## Usage
 
