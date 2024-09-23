@@ -71,7 +71,7 @@ This repository contains an implementation of an advanced image style transfer t
     
 ## Issues
 
-- If you get error as clip_vision model couldn't found error, go to /custom_nodes/ComfyUI_IPAdapter_plus/utils.py find get_clipvision_file and get_ipadapter_file functions,in these functions you should delete None in clipvision_file, ipadapter_file variables and write the absolute path ot the corresponding model files manually.
+- If you get error as "clip_vision model couldn't found" or "IPAdapter model not found" errors, go to /custom_nodes/ComfyUI_IPAdapter_plus/utils.py find get_clipvision_file and get_ipadapter_file functions,in these functions you should delete None in clipvision_file, ipadapter_file variables and write the absolute path ot the corresponding model files manually. Just like *ipadapter_file = folder_paths.get_full_path("ipadapter", ipadapter_file[0]) if ipadapter_file else "/home/furkan/ComfyUi-Style-Transfer/models/ipadapter/ip-adapter_sdxl_vit-h.safetensors"*
   
 ## Custom OCR Preprocessing
 
