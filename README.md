@@ -77,8 +77,8 @@ For images containing text:
 2. Adjust the preprocessing parameters based on the characteristics of your text-containing image.
 
 ## Examples
-
-XXXX
+![A tiger as a target image.](ComfyUi-Style-Transfer/tiger.png)
+![Example of a tiger that generated in Van gogh style.](ComfyUi-Style-Transfer/tigers.png)
 
 ## Limitations
 
