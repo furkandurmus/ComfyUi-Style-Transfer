@@ -77,7 +77,7 @@ This repository contains an implementation of an advanced image style transfer t
 
 For images containing text:
 
-1. Enable the custom OCR preprocessing node in the workflow as named logo_processor.
+1. Enable the custom OCR preprocessing node in the workflow as named image/logo_processor.
 2. Adjust the preprocessing parameters based on the characteristics of your text-containing image, especially lower the controlnet strength around 0.1.
 
 ## Examples
