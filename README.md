@@ -52,7 +52,7 @@ This repository contains an implementation of an advanced image style transfer t
 
 2. In the ComfyUI interface, load the provided workflow file: `style_transfer_workflow.json`
 
-3. Upload your reference style image and target image to the respective nodes.
+3. Upload your reference style image (you can find in *vangogh_images* folder) and target image to the respective nodes.
 
 4. Adjust parameters as needed (It may depend on your images and just play around, it is really fun!!).
 
