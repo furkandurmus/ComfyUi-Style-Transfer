@@ -1,0 +1,105 @@
+## ComfyUI-Manager: installing dependencies done.
+[2024-09-23 17:46] ** ComfyUI startup time: 2024-09-23 17:46:14.176709
+[2024-09-23 17:46] ** Platform: Linux
+[2024-09-23 17:46] ** Python version: 3.10.0 (default, Mar  3 2022, 09:58:08) [GCC 7.5.0]
+[2024-09-23 17:46] ** Python executable: /home/furkan/anaconda3/envs/comfy_dif/bin/python
+[2024-09-23 17:46] ** ComfyUI Path: /home/furkan/Desktop/style_transfer/ComfyUI
+[2024-09-23 17:46] ** Log path: /home/furkan/Desktop/style_transfer/ComfyUI/comfyui.log
+[2024-09-23 17:46] 
+Prestartup times for custom nodes:
+[2024-09-23 17:46]    0.6 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-09-23 17:46] 
+Total VRAM 24260 MB, total RAM 68338 MB
+[2024-09-23 17:46] pytorch version: 2.4.1+cu121
+[2024-09-23 17:46] Set vram state to: NORMAL_VRAM
+[2024-09-23 17:46] Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+[2024-09-23 17:46] Using pytorch cross attention
+[2024-09-23 17:46] [Prompt Server] web root: /home/furkan/Desktop/style_transfer/ComfyUI/web
+[2024-09-23 17:46] /home/furkan/anaconda3/envs/comfy_dif/lib/python3.10/site-packages/kornia/feature/lightglue.py:44: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @torch.cuda.amp.custom_fwd(cast_inputs=torch.float32)
+[2024-09-23 17:46] ### Loading: ComfyUI-Manager (V2.51)
+[2024-09-23 17:46] ### ComfyUI Revision: 2704 [de8e8e3b] | Released on '2024-09-19'
+[2024-09-23 17:46] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-09-23 17:46] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-09-23 17:46] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-09-23 17:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-09-23 17:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-09-23 17:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2024-09-23 17:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-09-23 17:46] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-09-23 17:46] /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+  warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
+[2024-09-23 17:46] 
+Import times for custom nodes:
+[2024-09-23 17:46]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/websocket_image_save.py
+[2024-09-23 17:46]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/vangogh_style_processor
+[2024-09-23 17:46]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/logo_processor
+[2024-09-23 17:46]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-09-23 17:46]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-09-23 17:46]    0.4 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-09-23 17:46] 
+[2024-09-23 17:46] Starting server
+
+[2024-09-23 17:46] To see the GUI go to: http://127.0.0.1:8188
+[2024-09-23 17:46] FETCH DATA from: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-09-23 17:46] got prompt
+[2024-09-23 17:46] model weight dtype torch.float16, manual cast: None
+[2024-09-23 17:46] model_type EPS
+[2024-09-23 17:46] Using pytorch attention in VAE
+[2024-09-23 17:46] Using pytorch attention in VAE
+[2024-09-23 17:46] /home/furkan/anaconda3/envs/comfy_dif/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[2024-09-23 17:46] warning, embedding:EasyNegativeV2, does not exist, ignoring
+[2024-09-23 17:46] warning, embedding:EasyNegativeV2, does not exist, ignoring
+[2024-09-23 17:46] Requested to load SDXLClipModel
+[2024-09-23 17:46] Loading 1 new model
+[2024-09-23 17:46] loaded completely 0.0 1560.802734375 True
+[2024-09-23 17:46] [33mINFO: Clip Vision model loaded from /home/furkan/Desktop/style_transfer/ComfyUI/models/clip_vision/CLIP-ViT-H-14-laion2B-s32B.b79K.safetensors[0m
+[2024-09-23 17:46] [33mINFO: IPAdapter model loaded from /home/furkan/Desktop/style_transfer/ComfyUI/models/ipadapter/ip-adapter_sdxl_vit-h.safetensors[0m
+[2024-09-23 17:46] [33mINFO: the IPAdapter reference image is not a square, CLIPImageProcessor will resize and crop it at the center. If the main focus of the picture is not in the middle the result might not be what you are expecting.[0m
+[2024-09-23 17:46] Requested to load CLIPVisionModelProjection
+[2024-09-23 17:46] Loading 1 new model
+[2024-09-23 17:46] loaded completely 0.0 1208.09814453125 True
+[2024-09-23 17:46] Requested to load ControlNet
+[2024-09-23 17:46] Requested to load SDXL
+[2024-09-23 17:46] Loading 2 new models
+[2024-09-23 17:46] loaded completely 0.0 2386.120147705078 True
+[2024-09-23 17:46] loaded completely 0.0 4897.0483474731445 True
+[2024-09-23 17:46] /home/furkan/anaconda3/envs/comfy_dif/lib/python3.10/site-packages/torchsde/_brownian/brownian_interval.py:608: UserWarning: Should have tb<=t1 but got tb=14.614643096923828 and t1=14.614643.
+  warnings.warn(f"Should have {tb_name}<=t1 but got {tb_name}={tb} and t1={self._end}.")
+[2024-09-23 17:46] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:12<00:00,  2.36it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:12<00:00,  1.98it/s]
+[2024-09-23 17:46] Requested to load AutoencoderKL
+[2024-09-23 17:46] Loading 1 new model
+[2024-09-23 17:46] loaded completely 0.0 159.55708122253418 True
+[2024-09-23 17:46] Prompt executed in 20.84 seconds
+[2024-09-23 17:56] got prompt
+[2024-09-23 17:56] [33mINFO: the IPAdapter reference image is not a square, CLIPImageProcessor will resize and crop it at the center. If the main focus of the picture is not in the middle the result might not be what you are expecting.[0m
+[2024-09-23 17:56] Requested to load SDXL
+[2024-09-23 17:56] Loading 1 new model
+[2024-09-23 17:56] /home/furkan/anaconda3/envs/comfy_dif/lib/python3.10/site-packages/torchsde/_brownian/brownian_interval.py:608: UserWarning: Should have tb<=t1 but got tb=14.614643096923828 and t1=14.614643.
+  warnings.warn(f"Should have {tb_name}<=t1 but got {tb_name}={tb} and t1={self._end}.")
+[2024-09-23 17:56] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:12<00:00,  2.33it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:12<00:00,  2.01it/s]
+[2024-09-23 17:56] Prompt executed in 14.89 seconds
+[2024-09-23 17:56] got prompt
+[2024-09-23 17:56] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:14<00:00,  2.35it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:14<00:00,  1.75it/s]
+[2024-09-23 17:56] Prompt executed in 14.73 seconds
+[2024-09-23 17:57] got prompt
+[2024-09-23 17:57] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:14<00:00,  2.19it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:14<00:00,  1.71it/s]
+[2024-09-23 17:57] Prompt executed in 15.08 seconds
+[2024-09-23 17:57] got prompt
+[2024-09-23 17:57] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:14<00:00,  2.28it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:14<00:00,  1.77it/s]
+[2024-09-23 17:57] Prompt executed in 14.55 seconds
+[2024-09-23 17:58] got prompt
+[2024-09-23 17:58] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:13<00:00,  2.30it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:13<00:00,  1.83it/s]
+[2024-09-23 17:58] Prompt executed in 14.05 seconds
+[2024-09-23 17:58] got prompt
+[2024-09-23 17:58] [33mINFO: the IPAdapter reference image is not a square, CLIPImageProcessor will resize and crop it at the center. If the main focus of the picture is not in the middle the result might not be what you are expecting.[0m
+[2024-09-23 17:58] Requested to load SDXL
+[2024-09-23 17:58] Loading 1 new model
+[2024-09-23 17:58] /home/furkan/anaconda3/envs/comfy_dif/lib/python3.10/site-packages/torchsde/_brownian/brownian_interval.py:608: UserWarning: Should have tb<=t1 but got tb=14.614643096923828 and t1=14.614643.
+  warnings.warn(f"Should have {tb_name}<=t1 but got {tb_name}={tb} and t1={self._end}.")
+[2024-09-23 17:59] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:14<00:00,  2.09it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:14<00:00,  1.72it/s]
+[2024-09-23 17:59] Prompt executed in 17.09 seconds
+[2024-09-23 17:59] got prompt
+[2024-09-23 17:59] 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:13<00:00,  2.23it/s]100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:13<00:00,  1.83it/s]
+[2024-09-23 17:59] Prompt executed in 14.10 seconds

@@ -1,0 +1,58 @@
+## ComfyUI-Manager: installing dependencies done.
+[2024-09-23 17:44] ** ComfyUI startup time: 2024-09-23 17:44:38.406899
+[2024-09-23 17:44] ** Platform: Linux
+[2024-09-23 17:44] ** Python version: 3.10.0 (default, Mar  3 2022, 09:58:08) [GCC 7.5.0]
+[2024-09-23 17:44] ** Python executable: /home/furkan/anaconda3/envs/comfy_dif/bin/python
+[2024-09-23 17:44] ** ComfyUI Path: /home/furkan/Desktop/style_transfer/ComfyUI
+[2024-09-23 17:44] ** Log path: /home/furkan/Desktop/style_transfer/ComfyUI/comfyui.log
+[2024-09-23 17:44] 
+Prestartup times for custom nodes:
+[2024-09-23 17:44]    0.6 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-09-23 17:44] 
+Total VRAM 24260 MB, total RAM 68338 MB
+[2024-09-23 17:44] pytorch version: 2.4.1+cu121
+[2024-09-23 17:44] Set vram state to: NORMAL_VRAM
+[2024-09-23 17:44] Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+[2024-09-23 17:44] Using pytorch cross attention
+[2024-09-23 17:44] [Prompt Server] web root: /home/furkan/Desktop/style_transfer/ComfyUI/web
+[2024-09-23 17:44] /home/furkan/anaconda3/envs/comfy_dif/lib/python3.10/site-packages/kornia/feature/lightglue.py:44: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @torch.cuda.amp.custom_fwd(cast_inputs=torch.float32)
+[2024-09-23 17:44] ### Loading: ComfyUI-Manager (V2.51)
+[2024-09-23 17:44] ### ComfyUI Revision: 2704 [de8e8e3b] | Released on '2024-09-19'
+[2024-09-23 17:44] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-09-23 17:44] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-09-23 17:44] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-09-23 17:44] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-09-23 17:44] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-09-23 17:44] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2024-09-23 17:44] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-09-23 17:44] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-09-23 17:44] /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+  warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
+[2024-09-23 17:44] 
+Import times for custom nodes:
+[2024-09-23 17:44]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/websocket_image_save.py
+[2024-09-23 17:44]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/vangogh_style_processor
+[2024-09-23 17:44]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/logo_processor
+[2024-09-23 17:44]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus
+[2024-09-23 17:44]    0.0 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-09-23 17:44]    0.4 seconds: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-09-23 17:44] 
+[2024-09-23 17:44] Starting server
+
+[2024-09-23 17:44] To see the GUI go to: http://127.0.0.1:8188
+[2024-09-23 17:44] FETCH DATA from: /home/furkan/Desktop/style_transfer/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2024-09-23 17:45] got prompt
+[2024-09-23 17:45] !!! Exception during processing !!! VanGoghPreprocessor.preprocess() missing 1 required positional argument: 'swirl_effect'
+[2024-09-23 17:45] Traceback (most recent call last):
+  File "/home/furkan/Desktop/style_transfer/ComfyUI/execution.py", line 323, in execute
+    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+  File "/home/furkan/Desktop/style_transfer/ComfyUI/execution.py", line 198, in get_output_data
+    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+  File "/home/furkan/Desktop/style_transfer/ComfyUI/execution.py", line 169, in _map_node_over_list
+    process_inputs(input_dict, i)
+  File "/home/furkan/Desktop/style_transfer/ComfyUI/execution.py", line 158, in process_inputs
+    results.append(getattr(obj, func)(**inputs))
+TypeError: VanGoghPreprocessor.preprocess() missing 1 required positional argument: 'swirl_effect'
+
+[2024-09-23 17:45] Prompt executed in 0.06 seconds
