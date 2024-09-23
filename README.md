@@ -39,8 +39,8 @@ This repository contains an implementation of an advanced image style transfer t
 
 3. Download the required models:
    - [Diffusion model](https://civitai.com/models/133005/juggernaut-xl) and put into /models/checkpoints
-   - [controlnet mode](https://comfyui-wiki.com/resource/controlnet-models/controlnet-sdxl) and put into /models/controlnet
-   - [Clip vision model](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K) and put into /models/clip_vision
+   - Download diffusers_xl_depth_full.safetensors [controlnet mode](https://comfyui-wiki.com/resource/controlnet-models/controlnet-sdxl) and put into /models/controlnet
+   - [CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) and put into /models/clip_vision and rename it as "CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
    - [Ipadapter model](https://huggingface.co/h94/IP-Adapter/blob/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors) and put into /models/ipadapter (create if not exists)
    - [Vae model](https://huggingface.co/hskWih/tmp_model/blob/2709fed9dcafe28f48d2cf798802206204f66889/tmpvae_XL/xlVAEC_f1.safetensors) and put into /models/vae
 
