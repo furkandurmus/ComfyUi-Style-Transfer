@@ -4,7 +4,7 @@ Apply Style Transfer with Diffusion Models on ComfyUi Tool
 
 ## Project Overview
 
-This repository contains an implementation of an advanced image style transfer tool using ComfyUI, a powerful interface for Stable Diffusion models. The project aims to apply artistic styles from reference images to target images, with a particular focus on handling complex scenarios including images with text.
+This repository contains an implementation of an advanced image style transfer tool using ComfyUI, a powerful interface for Stable Diffusion models. The project aims to apply artistic styles from reference images to target images.
 
 ## Features
 
@@ -38,18 +38,18 @@ This repository contains an implementation of an advanced image style transfer t
    ```
 
 3. Download the required models:
-   - [Juggernaut XL](https://civitai.com/models/133005/juggernaut-xl) and put into /models/checkpoints
-   - [diffusers_xl_depth_full.safetensors](https://comfyui-wiki.com/resource/controlnet-models/controlnet-sdxl) and put into /models/controlnet
-   - [clip vision](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K) and put into /models/clip_vision
-   - [ipadapter](https://huggingface.co/h94/IP-Adapter/blob/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors) and put into /models/ipadapter (create if not exists)
-   - [vae](https://huggingface.co/hskWih/tmp_model/blob/2709fed9dcafe28f48d2cf798802206204f66889/tmpvae_XL/xlVAEC_f1.safetensors) and put into /models/vae
+   - [Diffusion model](https://civitai.com/models/133005/juggernaut-xl) and put into /models/checkpoints
+   - [controlnet mode](https://comfyui-wiki.com/resource/controlnet-models/controlnet-sdxl) and put into /models/controlnet
+   - [Clip vision model](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K) and put into /models/clip_vision
+   - [Ipadapter model](https://huggingface.co/h94/IP-Adapter/blob/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors) and put into /models/ipadapter (create if not exists)
+   - [Vae model](https://huggingface.co/hskWih/tmp_model/blob/2709fed9dcafe28f48d2cf798802206204f66889/tmpvae_XL/xlVAEC_f1.safetensors) and put into /models/vae
 
 
 ## Usage
 
 1. Start ComfyUI:
    ```
-   python /comfyui/main.py
+   python /ComfyUi-Style-Transfer/main.py
    ```
 
 2. In the ComfyUI interface, load the provided workflow file: `style_transfer_workflow.json`
@@ -68,13 +68,17 @@ This repository contains an implementation of an advanced image style transfer t
   - Adjust steps (recommended: 20-30) 
   - Set an appropriate CFG Scale (recommended: 7-8)
   - Modify denoise strength (recommended: 0.5-0.7) to balance between preserving original content and applying new style.
+    
+## Issues
 
+- If you get error as clip_vision model couldn't found error, go to /custom_nodes/ComfyUI_IPAdapter_plus/utils.py find get_clipvision_file and get_ipadapter_file functions,in these functions you should delete None in clipvision_file, ipadapter_file variables and write the absolute path ot the corresponding model files manually.
+  
 ## Custom OCR Preprocessing
 
 For images containing text:
 
-1. Enable the custom OCR preprocessing node in the workflow.
-2. Adjust the preprocessing parameters based on the characteristics of your text-containing image.
+1. Enable the custom OCR preprocessing node in the workflow as named logo_processor.
+2. Adjust the preprocessing parameters based on the characteristics of your text-containing image, especially lower the controlnet strength around 0.1.
 
 ## Examples
 ![A tiger as a target image.](tiger.jpg)
