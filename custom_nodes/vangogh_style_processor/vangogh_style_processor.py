@@ -45,7 +45,7 @@ class VanGoghPreprocessor:
 
     RETURN_TYPES = ("IMAGE",)
     FUNCTION = "preprocess"
-    CATEGORY = "image/preprocessing"
+    CATEGORY = "image"
 
 
     def preprocess(self, image, contrast, saturation, brush_stroke_sim, tint_color, tint_strength):
