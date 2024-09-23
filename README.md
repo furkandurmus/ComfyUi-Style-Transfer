@@ -10,7 +10,6 @@ This repository contains an implementation of an advanced image style transfer t
 
 - Style transfer using state-of-the-art Stable Diffusion models
 - Integration with IPAdapter for enhanced style adaptation
-- Custom preprocessing for images containing text (OCR)
 - Flexible workflow allowing for easy experimentation and modification
 
 ## Prerequisites
@@ -38,11 +37,10 @@ This repository contains an implementation of an advanced image style transfer t
    ```
 
 3. Download the required models:
-   - Doqnload diffusion model [Diffusion model](https://civitai.com/models/133005/juggernaut-xl) and put into /models/checkpoints
+   - Download diffusion model [Diffusion model](https://civitai.com/models/133005/juggernaut-xl) and put into /models/checkpoints
    - Download controlnet [diffusers_xl_depth_full.safetensors](https://comfyui-wiki.com/resource/controlnet-models/controlnet-sdxl) and put into /models/controlnet
    - Download clip vision model [CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) and put into /models/clip_vision and rename it as "CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
    - Download ipadapter model [Ipadapter model](https://huggingface.co/h94/IP-Adapter/blob/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors) and put into /models/ipadapter (create if not exists)
-   - Download VAE model [Vae model](https://huggingface.co/hskWih/tmp_model/blob/2709fed9dcafe28f48d2cf798802206204f66889/tmpvae_XL/xlVAEC_f1.safetensors) and put into /models/vae
 
 
 ## Usage
@@ -56,18 +54,10 @@ This repository contains an implementation of an advanced image style transfer t
 
 3. Upload your reference style image and target image to the respective nodes.
 
-4. Adjust parameters as needed (see 'Configuration' section below).
+4. Adjust parameters as needed (It may depend on your images and just play around, it is really fun!!).
 
 5. Run the workflow and retrieve your styled image from the output node.
 
-## Configuration
-
-- **IPAdapter Settings**: Adjust strength to control the intensity of style transfer.
-- **ControlNet Settings**: Modify the influence of the depth map on the style transfer process.
-- **KSampler Settings**: 
-  - Adjust steps (recommended: 20-30) 
-  - Set an appropriate CFG Scale (recommended: 7-8)
-  - Modify denoise strength (recommended: 0.5-0.7) to balance between preserving original content and applying new style.
     
 ## Issues
 
@@ -77,7 +67,7 @@ This repository contains an implementation of an advanced image style transfer t
 
 For images containing text:
 
-1. Enable the custom OCR preprocessing node in the workflow as named image/logo_processor.
+1. Enable the custom preprocessing node in the workflow as named image/Van Gogh Logo Preprocessor.
 2. Adjust the preprocessing parameters based on the characteristics of your text-containing image, especially lower the controlnet strength around 0.1.
 
 ## Examples
