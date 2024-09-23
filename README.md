@@ -81,8 +81,9 @@ For images containing text:
 2. Adjust the preprocessing parameters based on the characteristics of your text-containing image, especially lower the controlnet strength around 0.1.
 
 ## Examples
-Target Image ![A tiger as a target image.](tiger.jpg)
-![Example of a tiger that generated in Van gogh style.](tigers.png)
+Target Image. ![A tiger as a target image.](tiger.jpg)
+
+Outputs and their corresponding reference images. ![Example of a tiger that generated in Van gogh style.](tigers.png)
 
 ## Limitations
 
