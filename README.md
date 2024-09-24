@@ -14,7 +14,7 @@ This repository contains an implementation of an advanced image style transfer t
 
 ## Prerequisites
 
-- Linux system 
+- Linux system (tested only on Linux Ubuntu 22.04 version)
 - Python 3.10+
 - CUDA-compatible GPU (for optimal performance)
 
@@ -40,7 +40,7 @@ This repository contains an implementation of an advanced image style transfer t
    - Download diffusion model [Diffusion model](https://civitai.com/models/133005/juggernaut-xl) and put into /models/checkpoints
    - Download controlnet [diffusers_xl_depth_full.safetensors](https://comfyui-wiki.com/resource/controlnet-models/controlnet-sdxl) and put into /models/controlnet
    - Download clip vision model [CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors](https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors) and put into /models/clip_vision and rename it as "CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
-   - Download ipadapter model [Ipadapter model](https://huggingface.co/h94/IP-Adapter/blob/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors) and put into /models/ipadapter (create if not exists)
+   - Download ipadapter model [Ipadapter model](https://huggingface.co/h94/IP-Adapter/blob/main/sdxl_models/ip-adapter_sdxl_vit-h.safetensors) and put into /models/ipadapter
 
 
 ## Usage
@@ -50,7 +50,7 @@ This repository contains an implementation of an advanced image style transfer t
    python /ComfyUi-Style-Transfer/main.py
    ```
 
-2. In the ComfyUI interface, load the provided workflow file: `style_transfer_workflow.json`
+2. In the ComfyUI interface, load the provided workflow file above: `style_transfer_workflow.json`
 
 3. Upload your reference style image (you can find in *vangogh_images* folder) and target image to the respective nodes.
 
